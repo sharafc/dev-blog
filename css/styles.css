@@ -8,6 +8,10 @@ h1 {
 	margin-bottom: 0;
 }
 
+header {
+    display: none;
+}
+
 footer {
 	margin-top: 50px;
 }

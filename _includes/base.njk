@@ -4,20 +4,18 @@
 		<title>Christian Sharaf Frontend Engineer | {{ title }}</title>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="{{ meta_description }}">
 		<link href='/css/styles.css' rel="stylesheet" />
 	</head>
 	
 	<body>
-		<header>
-		</header>
-		<main>
-			<div class="portrait"></div>
-			{{ content | safe }}
-		</main>
-		<footer>
-			<div>Created by Christian Sharaf</div>
-		</footer>
+		{% include "partials/header.njk" %}
+
+		{% block main %}			
+		{% endblock main %}
+
+		{% include "partials/footer.njk" %}
+
 	</body>
-	<body>
 </html>
