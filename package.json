@@ -1,23 +1,28 @@
 {
-  "name": "sharafc.github.io",
-  "version": "1.0.0",
-  "description": "Blog for SharafC",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "eleventy --serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sharafc/sharafc.github.io.git"
-  },
-  "author": "SharafC",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sharafc/sharafc.github.io/issues"
-  },
-  "homepage": "https://github.com/sharafc/sharafc.github.io#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.9.0"
-  }
+    "name": "sharafc.github.io",
+    "version": "1.0.0",
+    "description": "Blog for SharafC",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "eleventy --serve & gulp watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/sharafc/sharafc.github.io.git"
+    },
+    "author": "SharafC",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/sharafc/sharafc.github.io/issues"
+    },
+    "homepage": "https://github.com/sharafc/sharafc.github.io#readme",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.11.0",
+        "@11ty/eleventy-plugin-rss": "^1.0.9",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+        "gulp": "^4.0.2",
+        "gulp-sass": "^4.1.0",
+        "node-sass": "^4.14.1"
+    }
 }

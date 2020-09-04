@@ -1,49 +1,4 @@
-:root {
-    font-size: 16px;
-    font-family: 'Open Sans';
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
-    --bg-tertiary: #cccccc;
-    --transition-speed: 600ms;
-}
-
-html,
-body {
-    background-color: var(--bg-tertiary);
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 0;
-}
-
-header {
-    display: none;
-}
-
-footer {
-    margin-top: 50px;
-}
-
-.portrait {
-    background-image: url("../img/avatar.png");
-    background-position: 50% 20%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    border: 1px solid #000;
-    border-radius: 50%;
-    height: 100px;
-    margin: 0 auto;
-    width: 100px;
-}
-
-
-/* Navigation */
+/* Flyout Navigation on the left side */
 
 .navbar {
     background-color: var(--bg-primary);
@@ -64,10 +19,9 @@ footer {
 
 .nav-item {
     width: 100%;
-}
-
-.nav-item:last-child {
-    margin-top: auto;
+    &:last-child {
+        margin-top: auto;
+    }
 }
 
 .nav-link {
@@ -78,12 +32,16 @@ footer {
     height: 5rem;
     text-decoration: none;
     transition: var(--transition-speed);
-}
-
-.nav-link:hover {
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
-    filter: grayscale(0%) opacity(1);
+    &:hover {
+        background: var(--bg-secondary);
+        color: var(--text-secondary);
+        filter: grayscale(0%) opacity(1);
+    }
+    svg {
+        margin: 0 1.5rem;
+        min-width: 2rem;
+        width: 2rem;
+    }
 }
 
 .link-text {
@@ -91,18 +49,12 @@ footer {
     margin-left: 1rem;
 }
 
-.nav-link svg {
-    margin: 0 1.5rem;
-    min-width: 2rem;
-    width: 2rem;
-}
-
 .fa-primary {
-    color: #ff7eee;
+    color: #92fb61;
 }
 
 .fa-secondary {
-    color: #df49a6;
+    color: #6dc843;
 }
 
 .fa-primary,
@@ -120,13 +72,12 @@ footer {
     text-align: center;
     text-transform: uppercase;
     width: 100%;
-}
-
-.logo img {
-    border-radius: 50%;
-    height: 5rem;
-    transform: rotate(0deg);
-    transition: var(--transition-speed);
+    img {
+        border-radius: 50%;
+        height: 5rem;
+        transform: rotate(0deg);
+        transition: var(--transition-speed);
+    }
 }
 
 .logo-text {
@@ -168,17 +119,17 @@ footer {
         height: 100vh;
         top: 0;
         width: 6.2rem;
-    }
-    .navbar:hover {
-        width: 18.2rem;
-    }
-    .navbar:hover .link-text {
-        display: inline;
-    }
-    .navbar:hover .logo img {
-        margin-left: 12rem;
-    }
-    .navbar:hover .logo-text {
-        left: 0px;
+        &:hover {
+            width: 18.2rem;
+            .link-text {
+                display: inline;
+            }
+            .logo-text {
+                left: 0px;
+            }
+            .logo img {
+                margin-left: 12rem;
+            }
+        }
     }
 }

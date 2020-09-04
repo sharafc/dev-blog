@@ -1,0 +1,31 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --bg-tertiary: #cccccc;
+    --transition-speed: 600ms;
+}
+
+html,
+body {
+    background-color: var(--bg-tertiary);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.portrait {
+    background-image: url("/src/img/avatar.png");
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border: 1px solid #000;
+    border-radius: 50%;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+}
