@@ -1,6 +1,6 @@
 :root {
     font-size: 16px;
-    font-family: 'Open Sans';
+    font-family: 'Orbitron';
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #23232e;
@@ -12,10 +12,15 @@
 html,
 body {
     background-color: var(--bg-tertiary);
-    font-family: sans-serif;
+    font-family: Orbitron, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+}
+
+header,
+main,
+footer {
+    margin: 1rem 10rem;
 }
 
 .portrait {

@@ -46,27 +46,13 @@
 
 .link-text {
     display: none;
-    margin-left: 1rem;
-}
-
-.fa-primary {
-    color: #92fb61;
-}
-
-.fa-secondary {
-    color: #6dc843;
-}
-
-.fa-primary,
-.fa-secondary {
-    transition: var(--transition-speed);
 }
 
 .logo {
     background: var(--bg-secondary);
     color: var(--text-secondary);
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: 0.3ch;
     margin-bottom: 1rem;
     text-align: center;
@@ -83,12 +69,26 @@
 .logo-text {
     display: inline;
     left: -999px;
+    margin-left: 1rem;
     position: absolute;
     transition: var(--transition-speed);
 }
 
 .navbar:hover .logo img {
     transform: rotate(-360deg);
+}
+
+.nav-icon-primary {
+    color: #92fb61;
+}
+
+.nav-icon-secondary {
+    color: #6dc843;
+}
+
+.nav-icon-primary,
+.nav-icon-secondary {
+    transition: var(--transition-speed);
 }
 
 

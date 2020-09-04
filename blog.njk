@@ -1,0 +1,25 @@
+--- 
+title: Christian's blog posts 
+meta_description: My blog posts about anything and everything 
+---
+
+{% extends 'base.njk' %}
+
+{% block main %}
+    <main>
+        <h1>The Blog</h1>
+        <p>
+            My literary effusions. Mostly, but not exclusively, about web technology and geeky things. Can also contain health topics and rants.
+        </p>
+    </main>
+{% endblock %}
+
+{% block content %}
+    {%- for item in collections.posts  -%}
+        {% if loop.index < 4 %}
+            {% include 'post-teaser.njk' %}
+        {% else %}
+            {% include 'post-teaser-condensed.njk' %}
+        {% endif %}
+    {%- endfor -%}
+{% endblock %}
