@@ -1,5 +1,4 @@
 /* Flyout Navigation on the left side */
-
 .navbar {
     background-color: var(--bg-primary);
     overflow: scroll;
@@ -19,6 +18,7 @@
 
 .nav-item {
     width: 100%;
+    
     &:last-child {
         margin-top: auto;
     }
@@ -32,11 +32,13 @@
     height: 5rem;
     text-decoration: none;
     transition: var(--transition-speed);
+
     &:hover {
         background: var(--bg-secondary);
         color: var(--text-secondary);
         filter: grayscale(0%) opacity(1);
     }
+
     svg {
         margin: 0 1.5rem;
         min-width: 2rem;
@@ -58,6 +60,7 @@
     text-align: center;
     text-transform: uppercase;
     width: 100%;
+    
     img {
         border-radius: 50%;
         height: 5rem;
@@ -100,12 +103,15 @@
         height: 5rem;
         width: 100vw;
     }
+    
     .logo {
         display: none;
     }
+    
     .navbar-nav {
         flex-direction: row;
     }
+    
     .nav-link {
         justify-content: center;
     }
@@ -119,14 +125,18 @@
         height: 100vh;
         top: 0;
         width: 6.2rem;
+        
         &:hover {
             width: 18.2rem;
+            
             .link-text {
                 display: inline;
             }
+            
             .logo-text {
                 left: 0px;
             }
+            
             .logo img {
                 margin-left: 12rem;
             }

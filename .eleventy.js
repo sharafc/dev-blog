@@ -5,8 +5,15 @@ module.exports = function(eleventyConfig) {
         templateFormats: "md"
     });
 
-    eleventyConfig.addPassthroughCopy("src/img");
-    eleventyConfig.addPassthroughCopy("src/_deliverables/css");
+    // custom posts collection, to not have the need to tag blogposts with 'post'
+    eleventyConfig.addCollection("posts", function(collection) {
+        return collection.getFilteredByGlob("blog/*.md").reverse();
+    });
+
+    // add filter to Nunjucks since excerpt per frontmatter didn't work
+    eleventyConfig.addFilter("section", require("./_filters/section.js"));
+
+    eleventyConfig.addPassthroughCopy("src/img"); eleventyConfig.addPassthroughCopy("src/_deliverables/css");
     return {
         passthroughFileCopy: true
     };

@@ -15,7 +15,7 @@ meta_description: Want to know something about me?
 * Gaming Geek
 * Coffee addict
 
-✨ What keeps my mind wandering
+✨ What keeps my mind wandering:
 *    🔭 Working on a personal 11ty Blog while learning how this JAMstack thingy works
 *   🌱 Learning PHP, React and lots of Web technology I missed the last years
 *   🚐 Writing content for my travel blog
@@ -23,4 +23,3 @@ meta_description: Want to know something about me?
 *   👤 Not thriving in Chaos
 *   👯 Looking forward to collaborate with web developers, gamers, content creators... Short: all you awesome people!
 *   🥅 Goals 2020: Learn which was lost
-

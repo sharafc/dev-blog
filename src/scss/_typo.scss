@@ -1,3 +1,16 @@
 h1 {
-    margin-bottom: 0;
+    &::after {
+        background-color: #6dc843;
+        content: '';
+        display: block;
+        height: 1px;
+        margin-top: 1rem;
+    }
+}
+
+a {
+    color: #6dc843;
+    &:hover {
+        color: #92fb61;
+    }
 }

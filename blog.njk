@@ -2,24 +2,23 @@
 title: Christian's blog posts 
 meta_description: My blog posts about anything and everything 
 ---
-
-{% extends 'base.njk' %}
+{% extends 'layouts/simple.njk' %}
 
 {% block main %}
     <main>
         <h1>The Blog</h1>
         <p>
             My literary effusions. Mostly, but not exclusively, about web technology and geeky things. Can also contain health topics and rants.
+            Some of those posts are only in German. Ye be warned!
         </p>
-    </main>
-{% endblock %}
 
-{% block content %}
-    {%- for item in collections.posts  -%}
-        {% if loop.index < 4 %}
-            {% include 'post-teaser.njk' %}
-        {% else %}
-            {% include 'post-teaser-condensed.njk' %}
-        {% endif %}
-    {%- endfor -%}
+        {%- for item in collections.posts  -%}
+            {% if loop.index < 4 %}
+                {% include 'partials/post-teaser.njk' %}
+            {% else %}
+                {% include 'partials/post-teaser-excerpt.njk' %}
+                456
+            {% endif %}
+        {%- endfor -%}
+    </main>
 {% endblock %}

@@ -5,13 +5,14 @@
     --text-secondary: #ececec;
     --bg-primary: #23232e;
     --bg-secondary: #141418;
-    --bg-tertiary: #cccccc;
+    --bg-tertiary: #111131;
     --transition-speed: 600ms;
 }
 
 html,
 body {
     background-color: var(--bg-tertiary);
+    color: var(--text-primary);
     font-family: Orbitron, sans-serif;
     margin: 0;
     padding: 0;
@@ -41,4 +42,23 @@ footer {
     height: 100px;
     margin: 0 auto;
     width: 100px;
+}
+
+.tags {
+    list-style: none;
+    padding: 0;
+    &::before {
+        content: 'Taglist';
+        display: block;
+        float: left;
+    }
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+    li {
+        float: left;
+        padding: 0 10px;
+    }
 }
