@@ -1,7 +1,7 @@
 /* Flyout Navigation on the left side */
 .navbar {
     background-color: var(--bg-primary);
-    overflow: scroll;
+    overflow: hidden;
     position: fixed;
     transition: width 600ms ease;
 }
@@ -60,21 +60,21 @@
     text-align: center;
     text-transform: uppercase;
     width: 100%;
-    
+
+    .logo-text {
+        display: inline;
+        left: -999px;
+        margin-left: 1rem;
+        position: absolute;
+        transition: var(--transition-speed);
+    }
+
     img {
         border-radius: 50%;
         height: 5rem;
         transform: rotate(0deg);
         transition: var(--transition-speed);
     }
-}
-
-.logo-text {
-    display: inline;
-    left: -999px;
-    margin-left: 1rem;
-    position: absolute;
-    transition: var(--transition-speed);
 }
 
 .navbar:hover .logo img {
@@ -94,9 +94,7 @@
     transition: var(--transition-speed);
 }
 
-
 /* Small screens */
-
 @media only screen and (max-width: 600px) {
     .navbar {
         bottom: 0;
@@ -117,9 +115,7 @@
     }
 }
 
-
 /* Large screens */
-
 @media only screen and (min-width: 600px) {
     .navbar {
         height: 100vh;

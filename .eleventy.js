@@ -2,7 +2,7 @@ module.exports = function(eleventyConfig) {
     // syntax highlighting plugin
     const syntaxHighlightPlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
     eleventyConfig.addPlugin(syntaxHighlightPlugin, {
-        templateFormats: "md"
+        templateFormats: ["njk", "md"]
     });
 
     // custom posts collection, to not have the need to tag blogposts with 'post'
@@ -11,9 +11,13 @@ module.exports = function(eleventyConfig) {
     });
 
     // add filter to Nunjucks since excerpt per frontmatter didn't work
-    eleventyConfig.addFilter("section", require("./_filters/section.js"));
+    eleventyConfig.addFilter("teaser", require("./_filters/getTeaser.js"));
+    
+    // generate new Collection containing all Tags
+    eleventyConfig.addCollection("tagList", require("./_filters/getTagList.js"));
 
-    eleventyConfig.addPassthroughCopy("src/img"); eleventyConfig.addPassthroughCopy("src/_deliverables/css");
+    eleventyConfig.addPassthroughCopy("src/img");
+    eleventyConfig.addPassthroughCopy("src/_deliverables/css");
     return {
         passthroughFileCopy: true
     };

@@ -1,0 +1,25 @@
+---
+title: Phil Hawksworth's blog posts
+description: All posts for {{ tag }}
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+{% extends 'layouts/simple.njk' %}
+
+{% set taglist = collections[ tag ] %}
+
+{% block main %}
+    <main>
+        <h1>{{ tag }}</h1>
+        <p>There are {{ taglist.length }} items tagged <em>#{{ tag }}</em>.<br />
+            And there a lots of other <a href="/tags">tags</a> to explore.
+        </p>
+
+        {% for item in taglist | reverse %}
+            {% include 'partials/post-teaser-excerpt.njk' %}
+        {% endfor %}
+    </main>
+{% endblock %}

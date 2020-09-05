@@ -1,8 +1,15 @@
 ---
 layout: layouts/simple.njk
-title: Home
+title: Home of Christian
 meta_description: Home of Christian
 ---
-# The Playground for Christian Sharaf
+# Christian Sharaf
+## Dad | Nerd | Developer
 
-Frontend Engineer
+Welcome to my personal blog, playground, safe space, mancave, so to say just my little bubble in the big web!
+
+If you are interested <a href="/whoami">/whoami</a>, take a peek. 
+
+I am also wandering through other places, so if you want to play a game of tag or wander along, please <a href="/traceroute">/traceroute</a> me.
+
+If you want to get in touch with me, you have to read the <a href="/credits">credits</a>, like in good old Arcades 👽

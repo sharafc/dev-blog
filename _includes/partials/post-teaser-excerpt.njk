@@ -1,3 +1,11 @@
-<div class="blog-list-item">
-    excerpt
+<div class="blog-list-item">   
+    <h2>
+        <a href="{{ item.url }}">{{ item.data.title | safe }}</a>
+    </h2>
+
+    <ul class="tags">
+        {% for tag in item.data.tags -%}
+             <li><a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a></li>
+        {% endfor -%}
+    </ul>
 </div>
