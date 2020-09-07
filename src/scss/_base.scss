@@ -24,11 +24,24 @@ footer {
     margin: 1rem;
 }
 
+footer {
+    margin-bottom: 7rem;
+}
+
+figure {
+    margin: 1em;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
 @media only screen and (min-width: 600px) {
     header,
     main,
     footer {
-        margin: 1rem 10rem;
+        margin: 1rem 4rem 1rem 8rem;
     }
 }
 
@@ -60,5 +73,18 @@ footer {
     li {
         float: left;
         padding: 0 10px;
+    }
+}
+
+.knowledge {
+    svg {
+        color: var(--text-primary);
+        height: 2rem;
+        transition: 400ms;
+        
+        &:hover {
+            color: #6dc843;
+            filter: grayscale(0%) opacity(1);
+        }
     }
 }
