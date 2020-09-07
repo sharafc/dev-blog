@@ -6,7 +6,7 @@ meta_description: Home of Christian
 # Christian Sharaf
 ## Dad | Nerd | Developer
 
-Welcome to my personal blog, playground, safe space, mancave, so to say just my little bubble in the big web!
+Welcome to my personal <a href="/blog">blog</a>, playground, safe space, mancave, so to say just my little bubble in the big web!
 
 If you are interested <a href="/whoami">/whoami</a>, take a peek. 
 

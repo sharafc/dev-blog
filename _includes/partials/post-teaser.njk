@@ -1,17 +1,17 @@
-<div class="blog-list-item"> 
+<div class="teaser"> 
     <h2>
         <a href="{{ item.url }}">{{ item.data.title | safe }}</a>
     </h2>
 
     <ul class="tags">
-        {% for tag in item.data.tags -%}
+        {% for tag in item.data.tags %}
             <li><a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a></li>
-        {% endfor -%}
+        {% endfor %}
     </ul>
 
-    <div class="teaser">
+    <div class="teaser-content">
         {{ item.templateContent | teaser | safe }}
     </div>
    
-    <a href="{{ item.url }}" class="more-link btn">read more</a>
+    <a href="{{ item.url }}" class="teaser-link">read more</a>
 </div>

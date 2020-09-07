@@ -10,12 +10,13 @@ permalink: /tags/{{ tag }}/
 {% extends 'layouts/simple.njk' %}
 
 {% set taglist = collections[ tag ] %}
+{% set taglistLength = taglist.length %}
 
 {% block main %}
     <main>
         <h1>{{ tag }}</h1>
-        <p>There are {{ taglist.length }} items tagged <em>#{{ tag }}</em>.<br />
-            And there a lots of other <a href="/tags">tags</a> to explore.
+        <p>There {{ "are" if taglistLength > 1 else "is" }} {{ taglistLength }} {{ "items" if taglistLength > 1 else "item" }} tagged <em>#{{ tag }}</em>.<br />
+            And there a lots of other <a href="/tags">topics</a> to explore.
         </p>
 
         {% for item in taglist | reverse %}
