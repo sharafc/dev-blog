@@ -13,7 +13,9 @@ tags:
 
 In größeren Teams und Projekten, steht man manchmal unter der Herausforderung, dass auf unterschiedlichen Systemen unterschiedliche NodeJS/NPM-Versionen installiert sein können. Sollte man zusätzlich noch mit <a href="/blog/nvm-running-on-windows">unterschiedlichen NodeJS und NPM Versionen</a> in unterschiedlichen Teilprojekten arbeiten, können die lokal installierten Versionen sehr schnell auseinander gehen.
 <!-- more -->
-<img src="/src/img/data_flow.jpeg" alt="">
+<figure>
+    <img src="/src/img/data_flow.jpeg" alt="Datastream" title="Datastream">
+</figure>
 
 Um das zu vermeiden, kann man ein kleines NPM-Werkzeug namens <a href="https://github.com/mohlsen/check-engine" target="_blank">check-engine</a> einsetzen. Damit kann man über eine Konfiguration in der package.json die benötigte Version definieren und bei jedem gulp Lauf überprüfen, ob die Umgebung zu der Anforderung passt.
 
