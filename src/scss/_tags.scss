@@ -1,0 +1,18 @@
+.tags {
+    list-style: none;
+    padding: 0;
+    &::before {
+        content: 'Taglist';
+        display: block;
+        float: left;
+    }
+    &::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+    li {
+        float: left;
+        padding: 0 10px;
+    }
+}

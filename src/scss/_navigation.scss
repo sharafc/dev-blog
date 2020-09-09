@@ -1,7 +1,7 @@
 /* Flyout Navigation on the left side */
 .navbar {
     background-color: var(--bg-primary);
-    overflow: hidden;
+    overflow: scroll;
     position: fixed;
     transition: width 600ms ease;
 }
@@ -41,8 +41,7 @@
 
     svg {
         margin: 0 1.5rem;
-        min-width: 2rem;
-        width: 2rem;
+        width: 1.5rem;
     }
 }
 
@@ -97,6 +96,7 @@
 /* Small screens */
 @media only screen and (max-width: 600px) {
     .navbar {
+        box-sizing: border-box;
         bottom: 0;
         height: 5rem;
         width: 100vw;
@@ -121,6 +121,7 @@
         height: 100vh;
         top: 0;
         width: 5.2rem;
+        overflow: hidden;
         
         &:hover {
             width: 17.2rem;
@@ -137,5 +138,12 @@
                 margin-left: 12rem;
             }
         }
+    }
+
+    .nav-link {
+        svg {
+            min-width: 2rem; //needed because of transition
+            width: 2rem;
+        }    
     }
 }
