@@ -10,10 +10,10 @@ meta_description: Here you can get in touch with me
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
   <p>
-    <label>Email: <input type="text" name="email" /></label>
+    <label>Email: <input type="text" name="email" required/></label>
   </p>
   <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <label>Message: <textarea name="message" required></textarea></label>
   </p>
   <p>
     <button type="submit">Send</button>
