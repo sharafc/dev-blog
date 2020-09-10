@@ -119,9 +119,9 @@
 @media only screen and (min-width: 600px) {
     .navbar {
         height: 100vh;
+        overflow: hidden;
         top: 0;
         width: 5.2rem;
-        overflow: hidden;
         
         &:hover {
             width: 17.2rem;

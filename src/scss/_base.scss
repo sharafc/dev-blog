@@ -3,6 +3,7 @@ body {
     background-color: var(--bg-tertiary);
     color: var(--text-primary);
     font-family: Orbitron, sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -24,6 +25,49 @@ figure {
 
 img {
     max-width: 100%;
+}
+img[src*="#avatar"] {
+    float: left;
+    margin-right: 2em;
+    border-radius: 50%;
+    shape-outside: circle(57.16% at 70px 55px);
+}
+
+ul {
+    &.no-listitems {
+        list-style-type: none;
+
+        li {
+            &.telescope::before {
+                content: "🔭";
+                margin-right: 0.5em;
+            }
+            &.plant::before {
+                content: "🌱";
+                margin-right: 0.5em;
+            }
+            &.van::before {
+                content: "🚐";
+                margin-right: 0.5em;
+            }
+            &.lightbulb::before {
+                content: "💡";
+                margin-right: 0.5em;
+            }
+            &.emo::before {
+                content: "👤";
+                margin-right: 0.5em;
+            }
+            &.dancing::before {
+                content: "👯";
+                margin-right: 0.5em;
+            }
+            &.goal::before {
+                content: "🥅";
+                margin-right: 0.5em;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width: 600px) {
