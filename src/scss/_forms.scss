@@ -1,0 +1,48 @@
+form {
+    width: 50%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5em;
+}
+
+input,
+textarea {
+    background-color: var(--text-primary);
+    border: 1px solid var(--text-green);
+    border-radius: .25em;
+    display: block;
+    padding: 0.5em;
+    transition:
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out;
+    width: 100%;
+
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 .1rem var(--text-green-light);
+    }
+}
+
+button {
+    background-color: var(--bg-primary);
+    border: 1px solid;
+    border-radius: 3px;
+    color: var(--text-green);
+    cursor: pointer;
+    font-size: 1em;    
+    padding: .5em 1em;
+
+    &:hover {
+        background-color: var(--bg-secondary);
+        color: var(--text-green-light);
+    }
+}
+
+/* Setting font-family for form elements */
+input,
+textarea,
+button {
+    font-family: inherit;
+}

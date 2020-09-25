@@ -2,7 +2,7 @@ footer {
     text-align: center;
     
     &::before {
-        background-color: #6dc843;
+        background-color: var(--text-green);
         content: '';
         display: block;
         height: 1px;

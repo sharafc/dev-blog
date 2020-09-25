@@ -1,7 +1,7 @@
 h1, 
 h2 {
     &::after {
-        background-color: #6dc843;
+        background-color: var(--text-green);
         content: '';
         display: block;
         height: 1px;
@@ -10,15 +10,16 @@ h2 {
 }
 
 a {
-    color: #6dc843;
+    color: var(--text-green);
+
     &:hover {
-        color: #92fb61;
+        color: var(--text-green-light);
     }
 }
 
 pre {
     background-color: #000;
-    color: #6dc843;
+    color: var(--text-green);
     font-family: 'Courier', monospace;
     padding: 0.5em;
     overflow-x: auto;
