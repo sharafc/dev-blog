@@ -9,13 +9,16 @@ meta_description: Here you can get in touch with me
   <p class="hidden">
     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
   </p>
-  <p>
-    <label>Email: <input type="text" name="email" required/></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message" required></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+
+  <label for="email">Email*:</label>
+  <input type="text" name="email" required/>
+
+  <label for="email">Name:</label>
+  <input type="text" name="name" required/>
+
+  <label for="message">Message*:</label>
+  <textarea name="message" required></textarea>
+
+  <button type="submit" class="right">Send</button>
+
 </form>

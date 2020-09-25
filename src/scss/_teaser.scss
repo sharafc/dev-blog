@@ -7,9 +7,9 @@ $gradient-middle-color-light: lighten($gradient-middle-color, $enlighten-value);
 $gradient-stop-color-light: lighten($gradient-stop-color, $enlighten-value);
 
 .teaser {
-    border-radius: 5px;
-    background-color: var(--bg-tertiary);
     background: linear-gradient(90deg, $gradient-start-color 0%, $gradient-middle-color 53%, $gradient-stop-color 96%);
+    background-color: var(--bg-tertiary);
+    border-radius: 5px;
     margin-bottom: 1em;
     padding: 0.5em;
     display: flow-root;
