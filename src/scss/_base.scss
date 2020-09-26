@@ -44,6 +44,7 @@ img[src*="#avatar"] {
 ul {
     &.no-listitems {
         list-style-type: none;
+        padding: 0;
 
         li {
             &.telescope::before {
