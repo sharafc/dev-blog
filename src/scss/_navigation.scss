@@ -1,15 +1,18 @@
 /* Flyout Navigation on the left side */
 .navbar {
     background-color: var(--bg-primary);
-    overflow: scroll;
     position: fixed;
     transition: width 600ms ease;
+    box-sizing: border-box;
+    bottom: 0;
+    height: 4rem;
+    width: 100vw;
 }
 
 .navbar-nav {
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 100%;
     list-style: none;
     margin: 0;
@@ -17,11 +20,7 @@
 }
 
 .nav-item {
-    width: 100%;
-    
-    &:last-child {
-        margin-top: auto;
-    }
+    width: 100%;    
 }
 
 .nav-link {
@@ -30,6 +29,7 @@
     display: flex;
     filter: grayscale(100%) opacity(0.7);
     height: 5rem;
+    justify-content: center;
     text-decoration: none;
     transition: var(--transition-speed);
 
@@ -50,34 +50,7 @@
 }
 
 .logo {
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
-    font-weight: bold;
-    font-size: 1.25rem;
-    letter-spacing: 0.3ch;
-    margin-bottom: 1rem;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%;
-
-    .logo-text {
-        display: inline;
-        left: -999px;
-        margin-left: 1rem;
-        position: absolute;
-        transition: var(--transition-speed);
-    }
-
-    img {
-        border-radius: 50%;
-        height: 5rem;
-        transform: rotate(0deg);
-        transition: var(--transition-speed);
-    }
-}
-
-.navbar:hover .logo img {
-    transform: rotate(-360deg);
+    display: none;
 }
 
 .nav-icon-primary {
@@ -91,59 +64,4 @@
 .nav-icon-primary,
 .nav-icon-secondary {
     transition: var(--transition-speed);
-}
-
-/* Small screens */
-@media only screen and (max-width: 600px) {
-    .navbar {
-        box-sizing: border-box;
-        bottom: 0;
-        height: 5rem;
-        width: 100vw;
-    }
-    
-    .logo {
-        display: none;
-    }
-    
-    .navbar-nav {
-        flex-direction: row;
-    }
-    
-    .nav-link {
-        justify-content: center;
-    }
-}
-
-/* Large screens */
-@media only screen and (min-width: 600px) {
-    .navbar {
-        height: 100vh;
-        overflow: hidden;
-        top: 0;
-        width: 5.2rem;
-        
-        &:hover {
-            width: 17.2rem;
-            
-            .link-text {
-                display: inline;
-            }
-            
-            .logo-text {
-                left: 0px;
-            }
-            
-            .logo img {
-                margin-left: 12rem;
-            }
-        }
-    }
-
-    .nav-link {
-        svg {
-            min-width: 2rem; //needed because of transition
-            width: 2rem;
-        }    
-    }
 }
