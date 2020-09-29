@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Christian Sharaf | Dad Nerd Developer | {{ title }}</title>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="{{ meta_description }}">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <head>
+        <title>Christian Sharaf | Dad Nerd Developer | {{ title }}</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{ meta_description }}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
 
-		<link href='/src/_deliverables/css/main.css' rel="stylesheet">
-	</head>
-	
-	<body>
-		{% include "partials/header.njk" %}
+        <link href='/src/_deliverables/css/main.css' rel="stylesheet">
+    </head>
 
-		{% block main %}
-		{% endblock main %}
+    <body>
+        {% include "partials/header.njk" %}
 
-		{% block content %}
-        {% endblock %}
+        {% block main %}{% endblock main %}
+        {% block content %}{% endblock %}
 
-		{% include "partials/footer.njk" %}
+        {% include "partials/footer.njk" %}
 
         {% include "partials/navigation.njk" %}
-	</body>
+    </body>
 </html>
