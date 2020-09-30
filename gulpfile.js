@@ -6,6 +6,7 @@ var extractMediaQuery = require("gulp-extract-media-query");
 
 sass.compiler = require("node-sass");
 
+/* Compile the main.scss and push it into the tmp folder to trigger the post processing */
 gulp.task("sass", function () {
     return gulp
         .src("./src/scss/main.scss")
@@ -14,6 +15,8 @@ gulp.task("sass", function () {
     }
 );
 
+/* Process the generated CSS and extract/summarize the media queries into their own files
+and push it to deliverables where it is pushed through by 11ty */
 gulp.task("css", function () {
     return gulp
         .src("./src/_deliverables/tmpcss/main.css")

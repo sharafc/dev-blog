@@ -1,0 +1,12 @@
+.knowledge {
+    svg {
+        color: var(--text-primary);
+        height: 2rem;
+        transition: 400ms;
+
+        &:hover {
+            color: var(--text-green-light);
+            filter: grayscale(0%) opacity(1);
+        }
+    }
+}

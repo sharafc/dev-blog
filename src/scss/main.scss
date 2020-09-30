@@ -1,11 +1,4 @@
-@import 'variables';
-@import 'base';
-@import 'typo';
-@import 'utility';
-@import 'links';
-@import 'navigation';
-@import 'header';
-@import 'footer';
-@import 'tags';
-@import 'teaser';
-@import 'forms';
+@import "config/includes";
+@import "elements/includes";
+@import "utility/includes";
+@import "components/includes";
