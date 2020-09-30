@@ -1,0 +1,23 @@
+.link {
+    &__icon {
+        margin: 0 1.5rem;
+        width: 1.5rem;
+
+        &-primary,
+        &-secondary {
+            transition: var(--transition-speed);
+        }
+
+        &-primary {
+            color: var(--text-green-light);
+        }
+
+        &-secondary {
+            color: var(--text-green);
+        }
+    }
+}
+
+.link-external {
+
+}

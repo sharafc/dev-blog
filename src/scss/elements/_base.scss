@@ -1,0 +1,42 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    font-family: Orbitron, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header,
+main,
+footer {
+    margin: 1rem;
+}
+
+footer {
+    margin-bottom: 5.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        letter-spacing: 0.05em;
+    }
+
+    header,
+    main,
+    footer {
+        margin: 1rem 4rem 1rem 8rem;
+    }
+}

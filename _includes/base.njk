@@ -9,12 +9,13 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
 
         <link href='/src/_deliverables/css/main.css' rel="stylesheet">
+        <link href='/src/_deliverables/css/main-desktop.css' rel="stylesheet" media="(min-width: 600px)">
+        <link href='/src/_deliverables/css/main-xtra-small.css' rel="stylesheet"  media="(max-width: 360px)">
     </head>
 
     <body>
-        {% include "partials/header.njk" %}
-
         {% block main %}{% endblock main %}
+        
         {% block content %}{% endblock %}
 
         {% include "partials/footer.njk" %}

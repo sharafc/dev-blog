@@ -1,0 +1,35 @@
+.no-listitems {
+    list-style-type: none;
+    padding: 0;
+}
+
+.emoji-list {
+    .telescope::before {
+        content: "🔭";
+        margin-right: 0.5em;
+    }
+    .plant::before {
+        content: "🌱";
+        margin-right: 0.5em;
+    }
+    .van::before {
+        content: "🚐";
+        margin-right: 0.5em;
+    }
+    .lightbulb::before {
+        content: "💡";
+        margin-right: 0.5em;
+    }
+    .emo::before {
+        content: "👤";
+        margin-right: 0.5em;
+    }
+    .dancing::before {
+        content: "👯";
+        margin-right: 0.5em;
+    }
+    .goal::before {
+        content: "🥅";
+        margin-right: 0.5em;
+    }
+}
