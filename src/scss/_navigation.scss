@@ -48,14 +48,13 @@
     }
 }
 
-
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
     /* Navigation */
     .main-navigation {
         height: 100vh;
         overflow: hidden;
-        top: 0;
-        width: 5.2rem;
+        top: 0;  
+        width: 5.2rem; 
         
         &:hover {
             width: 17.2rem;
@@ -128,8 +127,7 @@
     }    
 }
 
-
-@media only screen and (max-width: 360px) {   
+@media (max-width: 360px) {   
     .menu {
         overflow: auto;
 

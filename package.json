@@ -1,5 +1,5 @@
 {
-    "name": "sharafc.github.io",
+    "name": "DeveloperBlog",
     "version": "1.0.0",
     "description": "Blog for SharafC",
     "main": "index.js",
@@ -9,20 +9,21 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sharafc/sharafc.github.io.git"
+        "url": "git+https://github.com/sharafc/dev-blog.git"
     },
     "author": "SharafC",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/sharafc/sharafc.github.io/issues"
+        "url": "https://github.com/sharafc/dev-blog/issues"
     },
-    "homepage": "https://github.com/sharafc/sharafc.github.io#readme",
+    "homepage": "https://github.com/sharafc/dev-blog#readme",
     "devDependencies": {
         "@11ty/eleventy": "^0.11.0",
         "@11ty/eleventy-plugin-rss": "^1.0.9",
         "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
         "gulp": "^4.0.2",
         "gulp-sass": "^4.1.0",
-        "node-sass": "^4.14.1"
+        "node-sass": "^4.14.1",
+        "gulp-extract-media-query": "^1.0.0"
     }
 }
