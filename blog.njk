@@ -13,7 +13,7 @@ meta_description: My blog posts about anything and everything
         </p>
 
         {% for item in collections.posts  %}
-            {% if loop.index < 4 %}
+            {% if loop.index < 6 %}
                 {% include 'partials/post-teaser.njk' %}
             {% else %}
                 {% include 'partials/post-teaser-excerpt.njk' %}
