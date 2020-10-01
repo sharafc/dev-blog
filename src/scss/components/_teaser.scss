@@ -6,7 +6,8 @@ $gradient-start-color-light: lighten($gradient-start-color, $enlighten-value);
 $gradient-middle-color-light: lighten($gradient-middle-color, $enlighten-value);
 $gradient-stop-color-light: lighten($gradient-stop-color, $enlighten-value);
 
-.teaser {
+.teaser,
+.teaser-excerpt {
     background: linear-gradient(90deg, $gradient-start-color 0%, $gradient-middle-color 53%, $gradient-stop-color 96%);
     background-color: var(--bg-tertiary);
     border-radius: 5px;
@@ -16,6 +17,10 @@ $gradient-stop-color-light: lighten($gradient-stop-color, $enlighten-value);
 
     &:hover {
         background: linear-gradient(90deg, $gradient-start-color-light 0%, $gradient-middle-color-light 53%, $gradient-stop-color-light 96%);
+    }
+
+    h2 {
+        margin-top: 1em;
     }
 
     .teaser-link {

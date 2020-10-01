@@ -1,7 +1,7 @@
 ---
 title: Diving into CSS display modes
-date: 2020-09-29
-publishdate: 2020-09-29
+date: 2020-10-01
+publishdate: 2020-10-01
 draft: true
 description: This post dives into the different CSS display modes
 tags:
@@ -18,6 +18,7 @@ Let's begin with a CodePen which contains all the examples I will explain below:
 
 <ul class="no-listitems horizontal-list">
     <li><a href="#block">display: block</a></li>
+    <li><a href="#table">display: table</a></li>
     <li><a href="#inline">display: inline</a></li>
     <li><a href="#inline-block">display: inline-block</a></li>
     <li><a href="#flow-root">display: flow-root</a></li>
@@ -32,15 +33,21 @@ Let's begin with a CodePen which contains all the examples I will explain below:
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+
 ## <a id="block"></a>display: block
 A block element always starts on a new line and takes up the full width available, defaulting to 100% if the parent doesn't define otherwise.
 There are a lot of elements which are by default a block element (having the `display: block` property):
 ```html
 <address> <article> <aside> <blockquote> <canvas> <dd> <div> <dl> <dt>
-<fieldset> <figcaption> <figure> <footer> <form>
-<h1>-<h6> <header> <hr> <li> <main> <nav> <noscript> <ol> <p> <pre>
-<section> <table> <tfoot> <ul> <video>
+<fieldset> <figcaption> <figure> <footer> <form> <h1>-<h6> <header>
+<hr> <li> <main> <nav> <noscript> <ol> <p> <pre> <section> <ul> <video>
 ```
+
+## <a id="table"></a>display: table
+`display: table` is a bit of a speciality. Like `display: block` it creates a block formating context, but due to the nested markup it behaves more like a `display: inline-block` and its children open their own block contexts.
+For a detailed look, please check the official [W3 documentation for tables](https://www.w3.org/TR/CSS21/tables.html#table-display) or have a look at the [extensive article about tables from Senktech](ttp://www.senktec.com/2014/01/using-css-display-table-cell-for-columns/).
+
+
 ## <a id="inline"></a>display: inline
 An inline element only takes the width and height its content needs and does not force a new line. Styling margin and padding will only affect the width, but not the height of the element since it doesn’t impact the page layout. By default inline elements can not contain block elements.
 Following a list of some elements which are by default `display: inline`:
@@ -51,8 +58,9 @@ Following a list of some elements which are by default `display: inline`:
 
 ## <a id="inline-block"></a>display: inline-block
 Now comes a more specific display property, which is not defaulted by any of the common HTML elements.
-The behaviour is the same like an inline element with the addition that it can take width and height and repsects magins and paddings. It still does not force a new line or defaults to the full width of the parent. It just influences its own layout.
+The behaviour is the same like an inline element with the addition that it can take width and height and respects margins and paddings. It still does not force a new line or defaults to the full width of the parent. It just influences its own layout.
 This can be helpful if you want to have a link which should be a bit more prominent (call-to-action) or want to have a horizontal navigation.
+
 
 ## <a id="flow-root"></a>display: flow-root
 As (maybe) a not so known display property, it really shines when you are working with lots of floats and have to use the famous clearfix hack. Fear no more! With `display: flow-root` there is no need for this anymore.
@@ -62,16 +70,18 @@ Further reading:
 * [Support table for display: flow-root on caniuse.com](https://caniuse.com/?search=flow-root)
 * [Draft for Display Layout Models on CSSWG](https://drafts.csswg.org/css-display-3/#valdef-display-flow-root)
 
+
 ## <a id="flex"></a>display: flex
 `display: flex` creates a Flexbox container, a one-dimensional (either row or column) layout model. It offers the possibility to easily distribute space between items, change flow-directions and growing of content.
 
 Further reading:
 * [Complete Guide on Csstricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [Comprehensice documentation on the Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+* [Comprehensive documentation on the Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
 * [Specification on W3.org](https://www.w3.org/TR/css-flexbox-1/)
 
+
 ## <a id="grid"></a>display: grid
-`display: grid` creates a Grid container that holds all the grid elements of a CSS Grid you define. A CSS Grid enables you to seperate source (HTML) and layout (CSS) and redefine the layout, e.g. with Media Queries, without having the need to change our markup. In difference to a Flexbox Layout, a Grid Layout is 2 dimensional (consists of rows AND columns).
+`display: grid` creates a Grid container that holds all the elements of a CSS Grid you define. A CSS Grid enables you to seperate source (HTML) and layout (CSS) and redefine the layout, e.g. with Media Queries, by just reordering the items in your grid. In difference to a Flexbox Layout, a Grid Layout is 2-dimensional (consists of rows AND columns).
 
 Further reading:
 * [Grid by Example from Rachel Andrews](https://gridbyexample.com)
