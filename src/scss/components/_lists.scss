@@ -3,6 +3,24 @@
     padding: 0;
 }
 
+.horizontal-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        margin: 0 auto 1em auto;
+        max-width: 80vw;
+    }
+
+    li {
+        flex-grow: 1;
+        text-align: center;
+        padding: 0.25em;
+    }
+}
+
 .emoji-list {
     .telescope::before {
         content: "🔭";
