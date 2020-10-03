@@ -1,4 +1,15 @@
-@import "config/includes";
+/**
+    Following the structure of ITCSS
+    - Settings (global settings like fonts, colors etc.)
+    - Tools (global functions and mixins)
+    - Generic (resets and normalize styles, box-sizing etc.)
+    - Elements (bare elements, overwriting browser presets like Typo, Lists Header/Footer etc. pp.)
+    - Objects (layout elements and undecoratet design patterns)
+    - Components (our widgets and components. here the magic should happen)
+    - Utilities (high specificity helpers)
+*/
+@import "settings/includes";
+@import "generic/includes";
 @import "elements/includes";
-@import "utility/includes";
 @import "components/includes";
+@import "utilities/includes";
