@@ -1,8 +1,8 @@
 "use strict";
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var extractMediaQuery = require("gulp-extract-media-query");
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const extractMediaQuery = require("gulp-extract-media-query");
 
 sass.compiler = require("node-sass");
 
@@ -12,8 +12,7 @@ gulp.task("sass", function () {
         .src("./src/scss/main.scss")
         .pipe(sass().on("error", sass.logError))
         .pipe(gulp.dest("./src/_deliverables/tmpcss"));
-    }
-);
+});
 
 /* Process the generated CSS and extract/summarize the media queries into their own files
 and push it to deliverables where it is pushed through by 11ty */

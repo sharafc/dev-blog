@@ -7,7 +7,7 @@ module.exports = function(eleventyConfig) {
 
     // custom posts collection, to not have the need to tag blogposts with 'post'
     eleventyConfig.addCollection("posts", function(collection) {
-        return collection.getFilteredByGlob("blog/*.md").reverse();
+        return collection.getFilteredByGlob("blog/*/*.md").reverse();
     });
     // generate new Collection containing all Tags
     eleventyConfig.addCollection("tagList", require("./_filters/getTagList.js"));
@@ -17,6 +17,7 @@ module.exports = function(eleventyConfig) {
     
     eleventyConfig.addPassthroughCopy("src/img");
     eleventyConfig.addPassthroughCopy("src/_deliverables/css");
+    
     
     return {
         passthroughFileCopy: true

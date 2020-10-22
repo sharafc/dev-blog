@@ -19,5 +19,7 @@
 }
 
 .link-external {
-
+    &::after {
+        content: '';
+    }
 }

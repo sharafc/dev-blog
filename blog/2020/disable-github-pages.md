@@ -2,7 +2,7 @@
 title: Disable GitHub Pages for legacy projects
 date: 2020-09-30
 publishdate: 2020-09-30
-draft: true
+draft: false
 description: A short manual on how to disable GitHub Pages for legacy branches
 tags:
   - GitHub

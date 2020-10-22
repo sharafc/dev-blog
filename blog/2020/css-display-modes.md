@@ -2,7 +2,7 @@
 title: Diving into CSS display modes
 date: 2020-10-01
 publishdate: 2020-10-01
-draft: true
+draft: false
 description: This post dives into the different CSS display modes
 tags:
   - CSS

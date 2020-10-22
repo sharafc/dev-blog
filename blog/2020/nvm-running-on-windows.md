@@ -2,6 +2,7 @@
 title: Node Version Manager (nvm) unter Windows nutzen
 date: 2020-06-16
 publishdate: 2020-06-16
+draft: false
 description: Node Version Manager (nvm) unter Windows nutzen
 tags:
   - NodeJS
