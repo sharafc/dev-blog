@@ -55,14 +55,54 @@ Again the JavaScript Engine parses the code and hoists `myVar`. This time we dec
 ### Hoisting table
 On [ExploringJS](https://exploringjs.com/es6/ch_variables.html#sec_overview-variables), you can find a really nifty table, showing all the variants how variables can be declared and how they are hoisted.
 
-| Type     | Hoisting           | Scope         | Global Properties |
-|----------|--------------------|---------------|-------------------|
-| var      | Declaration        | Function      | Yes               |
-| let      | Temporal Dead Zone | Block         | No                |
-| const    | Temporal Dead Zone | Block         | No                |
-| function | Complete           | Block         | Yes               |
-| class    | No                 | Block         | No                |
-| import   | Complete           | Module-global | No                |
+<table class="rwd-table">
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Hoisting</th>
+            <th>Scope</th>
+            <th>Global Properties</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-th="Type">var</td>
+            <td data-th="Hoisting">Declaration</td>
+            <td data-th="Scope">Function</td>
+            <td data-th="Global Properties">Yes</td>
+        </tr>
+        <tr>
+            <td data-th="Type">let</td>
+            <td data-th="Hoisting">Temporal Dead Zone</td>
+            <td data-th="Scope">Block</td>
+            <td data-th="Global Properties">No</td>
+        </tr>
+        <tr>
+            <td data-th="Type">const</td>
+            <td data-th="Hoisting">Temporal Dead Zone</td>
+            <td data-th="Scope">Block</td>
+            <td data-th="Global Properties">No</td>
+        </tr>
+        <tr>
+            <td data-th="Type">function</td>
+            <td data-th="Hoisting">Complete</td>
+            <td data-th="Scope">Block</td>
+            <td data-th="Global Properties">Yes</td>
+        </tr>
+        <tr>
+            <td data-th="Type">class</td>
+            <td data-th="Hoisting">No</td>
+            <td data-th="Scope">Block</td>
+            <td data-th="Global Properties">No</td>
+        </tr>
+        <tr>
+            <td data-th="Type">import</td>
+            <td data-th="Hoisting">Complete</td>
+            <td data-th="Scope">Module Global</td>
+            <td data-th="Global Properties">No</td>
+        </tr>    
+    </tbody>
+</table>
 
 I found contradictory statements about the hoisting of `let` and `const`. Some say they are not hoisted at all, some say the are but into the TDZ.
 I follow the later one, because a short example shows in my opinion that they are indeed hoisted; to the Temporal Dead Zone.

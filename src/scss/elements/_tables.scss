@@ -1,0 +1,41 @@
+.rwd-table {
+    background: var(--bg-primary);
+    border-radius: .5em;
+    max-width: 90vw;
+    min-width: 50vw;
+    overflow: hidden;
+   
+    th {
+        display: none;
+    }
+    
+    td {
+        display: block; 
+
+        &:before {
+            content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+            display: inline-block;
+            font-weight: bold;
+            
+            @media (min-width: $breakpoint-table) {
+                display: none;
+            }
+        }
+    }
+    
+    th, 
+    td {
+        text-align: left;
+        margin: .5em 1em;
+        
+        @media (min-width: $breakpoint-table) {
+            display: table-cell;
+            padding: .5em;
+        }
+    }
+    
+    th,
+    td:before {
+        color: var(--text-green);
+    }      
+}

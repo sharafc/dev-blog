@@ -21,7 +21,7 @@ gulp.task("css", function () {
         .src("./src/_deliverables/tmpcss/main.css")
         .pipe(
             extractMediaQuery({
-                match: "(min-width: 600px)",
+                match: "(min-width: 576px)",
                 postfix: "-desktop",
             })
         )
