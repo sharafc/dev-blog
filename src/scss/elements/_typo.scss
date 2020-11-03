@@ -23,8 +23,12 @@ a {
 
 pre {
     background-color: #000;
-    color: var(--text-green);
+    border-radius: .5em;
     font-family: 'Courier', monospace;
     padding: 0.5em;
     overflow-x: auto;
+}
+
+code {
+    color: var(--text-green);
 }

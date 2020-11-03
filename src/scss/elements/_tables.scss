@@ -1,8 +1,7 @@
 .rwd-table {
     background: var(--bg-primary);
     border-radius: .5em;
-    max-width: 90vw;
-    min-width: 50vw;
+    width: 100%;
     overflow: hidden;
    
     th {
@@ -13,7 +12,7 @@
         display: block; 
 
         &:before {
-            content: attr(data-th)": "; // who knew you could do this? The internet, that's who.
+            content: attr(data-th)": ";
             display: inline-block;
             font-weight: bold;
             
@@ -25,8 +24,8 @@
     
     th, 
     td {
-        text-align: left;
         margin: .5em 1em;
+        text-align: left;
         
         @media (min-width: $breakpoint-table) {
             display: table-cell;

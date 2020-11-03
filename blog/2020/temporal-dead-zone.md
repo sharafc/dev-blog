@@ -134,7 +134,7 @@ Both variables are bound to their blockscope. So the cycle looks a bit like this
 // TDZ
 console.log(myVar); // ReferenceError
 // TDZ
-let myVar; // TDZ ends, myVar is initialized without a value
+let myVar;          // TDZ ends, myVar is initialized without a value
 console.log(myVar); // undefined because of the default behaviour
 
 myVar = 'Awesome!'; // initializer is called with a value
