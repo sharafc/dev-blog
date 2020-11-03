@@ -7,6 +7,7 @@
     bottom: 0;
     height: 4rem;
     width: 100vw;
+    z-index: 1000;
 }
 
 .menu {
@@ -48,7 +49,7 @@
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: $breakpoint-small) {
     /* Navigation */
     .main-navigation {
         height: 100vh;
@@ -127,7 +128,7 @@
     }    
 }
 
-@media (max-width: 360px) {   
+@media (max-width: $breakpoint-extra-small) {   
     .menu {
         overflow: auto;
 
