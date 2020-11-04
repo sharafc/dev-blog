@@ -20,9 +20,9 @@
     },
     "homepage": "https://github.com/sharafc/dev-blog#readme",
     "devDependencies": {
-        "@11ty/eleventy": "^0.11.0",
+        "@11ty/eleventy": "^0.11.1",
         "@11ty/eleventy-plugin-rss": "^1.0.9",
-        "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
         "gulp": "^4.0.2",
         "gulp-extract-media-query": "^1.0.0",
         "gulp-sass": "^4.1.0",

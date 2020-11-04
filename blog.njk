@@ -12,7 +12,7 @@ meta_description: My blog posts about anything and everything
             Some of those posts are only in German. Ye be warned!
         </p>
 
-        {% for item in collections.posts  %}
+        {% for item in collections.published  %}
             {% if loop.index < 6 %}
                 {% include 'partials/post-teaser.njk' %}
             {% else %}
