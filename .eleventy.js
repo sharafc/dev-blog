@@ -5,6 +5,10 @@ module.exports = function(eleventyConfig) {
         templateFormats: ["njk", "md"]
     });
 
+    // rss feed plugin
+    const pluginRss = require("@11ty/eleventy-plugin-rss");
+    eleventyConfig.addPlugin(pluginRss);
+
     // get all published posts -> draft = false
     eleventyConfig.addCollection("published", function(collectionApi) {
         return collectionApi.getAllSorted().reverse().filter(function(item) {
