@@ -1,4 +1,5 @@
 <div class="teaser"> 
+    <p class="teaser__publishingdate">{{ item.data.publishdate | publishingdate | safe }}</p>
     <h2>
         <a href="{{ item.url }}">{{ item.data.title | safe }}</a>
     </h2>
@@ -9,9 +10,9 @@
         {% endfor %}
     </ul>
 
-    <div class="teaser-content">
+    <div class="teaser__content">
         {{ item.templateContent | teaser | safe }}
     </div>
    
-    <a href="{{ item.url }}" class="teaser-link">read more</a>
+    <a href="{{ item.url }}" class="teaser__link">read more</a>
 </div>

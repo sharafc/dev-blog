@@ -13,16 +13,17 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection("published", function(collectionApi) {
         return collectionApi.getAllSorted().reverse().filter(function(item) {
             // Side-step tags and do your own filtering
-            console.log(item.data.draft);
             return item.data.draft === false;
         });
     });
 
-    // generate new Collection containing all Tags
+    // generate new Collection containing just wanted Tags
     eleventyConfig.addCollection("tagList", require("./_filters/getTagList.js"));
 
-    // add filter to Nunjucks since excerpt per frontmatter didn't work
+    // add filter to Nunjucks since excerpt per Frontmatter didn't work
     eleventyConfig.addFilter("teaser", require("./_filters/getTeaser.js"));
+    
+    eleventyConfig.addFilter("publishingdate", require("./_filters/getDate.js") );
     
     eleventyConfig.addPassthroughCopy("src/img");
     eleventyConfig.addPassthroughCopy("src/_deliverables/css");    

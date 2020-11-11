@@ -4,7 +4,8 @@ title: Home of Christian
 meta_description: Home of Christian
 ---
 <h1 class="centered"><img src="/src/img/christian_sharaf.png" alt="8Bit Logo: Christian Sharaf" title="Christian Sharaf"></h1>
-<h2 class="centered">Dad | Nerd | Developer</h2>
+
+<h2 class="centered">Dad ~ Nerd ~ Developer</h2>
 
 Welcome to my personal <a href="/blog">blog</a>, playground, safe space, mancave, so to say just my little bubble in the big web!
 

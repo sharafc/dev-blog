@@ -11,9 +11,9 @@ $gradient-stop-color-light: lighten($gradient-stop-color, $enlighten-value);
     background: linear-gradient(90deg, $gradient-start-color 0%, $gradient-middle-color 53%, $gradient-stop-color 96%);
     background-color: var(--bg-tertiary);
     border-radius: 5px;
+    display: flow-root;
     margin-bottom: 1em;
     padding: 0.5em;
-    display: flow-root;
 
     &:hover {
         background: linear-gradient(90deg, $gradient-start-color-light 0%, $gradient-middle-color-light 53%, $gradient-stop-color-light 96%);
@@ -23,7 +23,11 @@ $gradient-stop-color-light: lighten($gradient-stop-color, $enlighten-value);
         margin-top: 1em;
     }
 
-    .teaser-link {
+    &__publishingdate {
+        float: right;
+    }
+
+    &__link {
         float: right;
     }
 }
