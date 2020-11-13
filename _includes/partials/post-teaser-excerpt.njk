@@ -1,11 +1,12 @@
 <div class="teaser-excerpt">   
-    <h2>
-        <a href="{{ item.url }}">{{ item.data.title | safe }}</a>
-    </h2>
+    <header class="teaser__header">
+        <h2><a href="{{ item.url }}">{{ item.data.title | safe }}</a></h2>
+        <p class="teaser__header-publishingdate">{{ item.data.publishdate | publishingdate | safe }}</p>
+    </header>
 
     <ul class="tags">
-        {% for tag in item.data.tags -%}
-             <li><a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a></li>
-        {% endfor -%}
+        {% for tag in item.data.tags %}
+            <li><a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a></li>
+        {% endfor %}
     </ul>
 </div>

@@ -9,13 +9,8 @@ module.exports = function(eleventyConfig) {
     const pluginRss = require("@11ty/eleventy-plugin-rss");
     eleventyConfig.addPlugin(pluginRss);
 
-    // get all published posts -> draft = false
-    eleventyConfig.addCollection("published", function(collectionApi) {
-        return collectionApi.getAllSorted().reverse().filter(function(item) {
-            // Side-step tags and do your own filtering
-            return item.data.draft === false;
-        });
-    });
+    // get all published posts & previous and next link
+    eleventyConfig.addCollection("published", require("./_filters/getPublishedPosts.js"));
 
     // generate new Collection containing just wanted Tags
     eleventyConfig.addCollection("tagList", require("./_filters/getTagList.js"));

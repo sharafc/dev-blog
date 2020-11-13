@@ -2,14 +2,30 @@
 {% set section = 'blog' %}
 
 {% block main %}
-    <main>
-        <h1>{{ title }}</h1>
-        <ul class="tags">
-            {% for tag in tags -%}
-                <li><a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a></li>
-            {% endfor -%}
-        </ul>
+    <main>   
+        <article>     
+            <h1>{{ title }}</h1>
+            <p>Published: {{ publishdate | publishingdate | safe }}</p>
+            <ul class="tags">
+                {% for tag in tags %}
+                    <li><a href="/tags/{{ tag }}" class="tag">#{{ tag }}</a></li>
+                {% endfor %}
+            </ul>
+            {{ content | teaser | safe }}
+            {{ content | teaser('remainder') | safe }}
+        </article>
 
-        {{ content | safe }}
-    </main>    
+        <nav class="vhs">
+            {% if previousPost.url %}
+                <p class="vhs__rewind">                
+                    <a class="previous" href="{{ previousPost.url }}"><strong>&laquo;</strong> {{ previousPost.data.title }}</a>
+                </p>
+            {% endif %}
+            {% if nextPost.url %}
+                <p class="vhs__fastforward">
+                    <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }} <strong>&raquo;</strong></a>                
+                </p>
+            {% endif %}
+        </nav>
+    </main>
 {% endblock main %}

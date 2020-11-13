@@ -1,8 +1,8 @@
-<div class="teaser"> 
-    <p class="teaser__publishingdate">{{ item.data.publishdate | publishingdate | safe }}</p>
-    <h2>
-        <a href="{{ item.url }}">{{ item.data.title | safe }}</a>
-    </h2>
+<section class="teaser">
+    <header class="teaser__header">
+        <h2><a href="{{ item.url }}">{{ item.data.title | safe }}</a></h2>
+        <p class="teaser__header-publishingdate">{{ item.data.publishdate | publishingdate | safe }}</p>
+    </header>
 
     <ul class="tags">
         {% for tag in item.data.tags %}
@@ -15,4 +15,4 @@
     </div>
    
     <a href="{{ item.url }}" class="teaser__link">read more</a>
-</div>
+</section>

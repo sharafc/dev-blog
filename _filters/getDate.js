@@ -1,6 +1,7 @@
-/*
-    A simple date formatter
-*/
+/**
+ * A simple date formatter
+ * @param {String} date The date we want to convert to our formatting rule
+ */
 module.exports = function(date) {
   var currentDate = new Date(date);
 
@@ -27,6 +28,6 @@ module.exports = function(date) {
     23 : "rd",
     31 : "st"
   };
-  console.info('dateparam:' + date);
+
   return month[currentDate.getMonth()] + " " + currentDate.getDate() + (ordinal[currentDate.getDate()] || "th") + ", " + currentDate.getUTCFullYear();
 }

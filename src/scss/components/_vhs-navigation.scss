@@ -1,0 +1,19 @@
+.vhs {
+  
+    background-color: #ACACAC;
+    background-image: linear-gradient(180deg, #ACACAC 0%, #898989 74%);
+    border-radius: 1px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5em;
+    padding: .5em;
+
+    &__rewind,
+    &__fastforward,
+    &__eject {
+        background-color: #000;
+        border-radius: 2px;
+        margin: .25em;
+        padding: .5em;
+    }
+}
