@@ -1,7 +1,7 @@
 ---
 title: CSS architecture | OOCSS, SMACSS, ITCSS, BEM? - Part I
 date: 2021-02-02
-publishdate: 2020-02-04
+publishdate: 2021-02-03
 draft: false
 description: The CSS architecture I decided to use for this blog and my process of thought while finding the decision
 tags:
