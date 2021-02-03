@@ -20,15 +20,15 @@
     "homepage": "https://github.com/sharafc/dev-blog#readme",
     "devDependencies": {
         "@11ty/eleventy": "^0.11.1",
-        "@11ty/eleventy-plugin-rss": "^1.0.9",
-        "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+        "@11ty/eleventy-plugin-rss": "^1.1.0",
+        "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
         "gulp": "^4.0.2",
         "gulp-extract-media-query": "^1.0.0",
         "gulp-sass": "^4.1.0",
         "node-sass": "^4.14.1"
     },
     "dependencies": {
-        "debug": "^4.2.0",
+        "debug": "^4.3.1",
         "lodash": ">=4.17.20",
         "lodash.template": ">=4.5.0",
         "minimatch": ">=3.0.4"
