@@ -1,0 +1,3 @@
+[build]
+    command = "gulp build && eleventy"
+    publish = "_site"

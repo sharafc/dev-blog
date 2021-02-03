@@ -1,6 +1,7 @@
 /**
  * A simple date formatter
- * @param {String} date The date we want to convert to our formatting rule
+ * 
+ * @param {String} date - The date we want to convert to our formatting rule
  */
 module.exports = function(date) {
   var currentDate = new Date(date);
