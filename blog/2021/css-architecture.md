@@ -1,5 +1,5 @@
 ---
-title: CSS architecture | OOCSS, SMACSS, ITCSS, BEM? - Part I
+title: CSS architecture | OOCSS, SMACSS, BEM, ITCSS? - Part I
 date: 2021-02-02
 publishdate: 2021-02-03
 draft: false
@@ -247,9 +247,10 @@ The last layer with your high specificity helpers which have potential to overwr
 
 I really like this structure! It gives you a clear idea where your things should be located and helps you to organize your stuff. It is very powerful with a preprocessor and fully compatible with OOCSS, SMACSS or BEM.
 If you work with a preprocessor you can easily have one entry point to your project CSS and just import the different layers from there.
+A fully blown implementation of the method is [inuitCSS](http://inuitcss.com/).
 
 ## Resume
-These are the most influental patterns for me. I know that there are a lot more out there, some also combined with design patterns ([Atomic Design from Brad Frost](https://atomicdesign.bradfrost.com/) for example.
+These are the most influental patterns for me. I know that there are a lot more out there, some also combined with design patterns ([Atomic Design from Brad Frost](https://atomicdesign.bradfrost.com/)) for example.
 
 But the most exciting part of all of this is: What do I make out of all these patterns?
 More to that in Part II of this article.
