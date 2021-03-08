@@ -3,7 +3,7 @@ layout: layouts/simple.njk
 title: Credits
 meta_description: Here you can get in touch with me
 ---
-# Credits aka Imprint
+# Credits aka Contact me
 
 <form name="contact" method="POST" netlify-honeypot="company-name" data-netlify="true" action="/thanks">
   <p class="hidden">
