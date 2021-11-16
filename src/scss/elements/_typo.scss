@@ -1,4 +1,4 @@
-h1, 
+h1,
 h2 {
     &::after {
         background-color: var(--text-green);
@@ -7,10 +7,6 @@ h2 {
         height: 1px;
         margin-top: 1rem;
     }
-}
-
-h2 {
-    margin-top: 2em;
 }
 
 a {
