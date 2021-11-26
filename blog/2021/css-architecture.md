@@ -19,8 +19,6 @@ While musing about the future CSS architecture for my blog and deliberatly quest
     <img src="/src/img/library.jpg" alt="Library shelves full of books" title="CSS Architecture - OOCSS, SMACSS, ITCSS, BEM? Yes!">
 </figure>
 
-
-
 In the "good old days" I just wrote my CSS like it came to my mind. My projects I worked on, were small, tailored to only one customer with
 no need to tweak for performance or reusability. And for those roughly 300-500 lines of CSS to get a simple website running no real cascade and specificity tuning was needed.
 
